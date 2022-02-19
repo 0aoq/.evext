@@ -1,0 +1,15 @@
+{
+    "name": "evext",
+    "version": "1.0.0",
+    "description": "Decipher .evext files",
+    "main": "package/evext.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "ZBASE Control Team",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^17.0.18",
+        "typescript": "^4.5.5"
+    }
+}
