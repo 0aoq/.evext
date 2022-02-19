@@ -6,9 +6,12 @@ The amount of characters added for a single character is determined by the chara
 
 ## Usage
 
-1. Create a `.env` file in the root directory of your project with the "CONTROL_ALPHABET" variable set to the alphabet you want to use. It must include all lowercase characters, all upercase characters, numbers 1-9, a space character, and any special characters you want to use.
+1. Create a `.env` file in the root directory of your project with the "CONTROL_ALPHABET" variable set to the alphabet you want to use. It must include all lowercase characters, all upercase characters, numbers 1-9, a space character, and any special characters you want to use. The `"` character must be escaped with a `\` in the `.env` file, otherwise the decompiled file will return blank.
 2. Run `./scripts/install.ps1` to install the required dependencies from NPM.
 3. Run `./scripts/test.ps1` to test the protocol.
+
+A basic control alphabet looks like this: `~1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./QWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()<>?'\"`<br>
+This example includes a-z, A-Z, 1-9, space, and most normal special characters. Its characters can be shuffled to create a unique alphabet.
 
 <!-- ## Thanks To
 
