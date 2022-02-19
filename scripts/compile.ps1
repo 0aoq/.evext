@@ -5,6 +5,6 @@ tsc # Compile the typescript files
 Write-Output '[?] Obfuscating'
 terser package/dist/evext.js -o package/dist/evext.js # Obfuscate the javascript file using terser
 Write-Output '[?] Building'
-pkg package/dist/evext.js --out-path package/build --compress GZip --debug # Build the package using vercel/pkg
+pkg . --compress GZip --debug # Build the package using vercel/pkg
 Write-Output '[!] Done'
 Write-Output -----------------------------------------------------------------------------------------------------------------------

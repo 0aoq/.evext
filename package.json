@@ -2,7 +2,8 @@
     "name": "evext",
     "version": "1.0.0",
     "description": "Decipher .evext files",
-    "main": "package/evext.js",
+    "main": "package/dist/evext.js",
+    "bin": "package/dist/evext.js",
     "scripts": {
         "test": "exit 1"
     },
@@ -10,6 +11,12 @@
     "license": "ISC",
     "dependencies": {
         "@types/node": "^17.0.18",
+        "dotenv": "^16.0.0",
         "typescript": "^4.5.5"
+    },
+    "pkg": {
+        "scripts": "package/dist/evext.js",
+        "assets": ".env",
+        "outputPath": "package/build"
     }
 }

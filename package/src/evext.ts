@@ -6,9 +6,10 @@
 
 // imports
 const fs = require('fs')
+require("dotenv").config() // load .env file
 
 // key containing every character than can be used in a random order - ruins the point of the encryption if it's compromised
-const encodingRuleset = " xZ'^m}>C`W4v*D.Xw@a<=+NULjT;As&hI09%oEq|6i(1GKtpF7R#zd8r)buG~!/2:M?-VYg3_J]\"PQOBHekfSlc,[5ny${"
+const encodingRuleset = process.env.CONTROL_ALPHABET
 
 // ---------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------- FUNCTION DEFINITIONS --------------------------------------------------
